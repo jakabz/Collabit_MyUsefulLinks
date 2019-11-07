@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "bea9b5f8-78b7-4710-af52-123cbb064f44",
+  "alias": "UsefulLinksWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "Useful links" },
+    "description": { "default": "Useful links description" },
+    "officeFabricIconFontName": "Link",
+    "properties": {
+      "title": "My Useful Links"
+    }
+  }]
+}
