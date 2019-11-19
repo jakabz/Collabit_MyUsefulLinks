@@ -12,10 +12,12 @@ export default class UsefulLinks extends React.Component<IUsefulLinksProps, {}> 
   
   public render(): React.ReactElement<IUsefulLinksProps> {
     //console.info(this.props.myLinks);
-    this.items = this.props.myLinks.map((item, key) => {
-      let target = item.OpenNewWindow ? '_blank' : 'self';
-      return <div className={styles.userfulLinksItem}><a href={item.Url} target={target} className={styles.userfulLink}>{item.Title}</a></div>;
-    });
+    if(this.items = this.props.myLinks){
+      this.items = this.props.myLinks.map((item, key) => {
+        let target = item.OpenNewWindow ? '_blank' : 'self';
+        return <div className={styles.userfulLinksItem}><a href={item.Url} target={target} className={styles.userfulLink}>{item.Title}</a></div>;
+      });
+    }
     
     return (
       <div className={ styles.usefulLinks }>

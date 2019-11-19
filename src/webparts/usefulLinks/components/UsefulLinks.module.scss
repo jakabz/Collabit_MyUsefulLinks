@@ -31,7 +31,7 @@
   }
 
   .userfulLinksItems {
-    background-color: "[theme: white]";
+    background-color: #fff;
 
     .userfulLinksItem {
       margin: 5px;
@@ -43,6 +43,18 @@
         color: "[theme: themePrimary]";
         font-size: 14px;
         display:block;
+      }
+
+      .userfulLinksItemToolbar {
+        float:right;
+
+        i {
+          cursor:pointer;
+          color: "[theme: themeDarkAlt]";
+        }
+        i:hover {
+          color:"[theme: themePrimary]";
+        }
       }
     }
     .userfulLinksItem:hover {

@@ -54,7 +54,7 @@ export default class UsefulLinksWebPart extends BaseClientSideWebPart<IUsefulLin
   }
 
   private _getListData(query:string): Promise<any> {
-    return this.context.spHttpClient.get(this.context.pageContext.web.absoluteUrl + `/_api/web/Lists/GetByTitle('MyUsefulLinks')/Items?` + query, SPHttpClient.configurations.v1)
+    return this.context.spHttpClient.get(this.context.pageContext.web.absoluteUrl + `/_api/web/Lists/GetByTitle('My Useful Links')/Items?` + query, SPHttpClient.configurations.v1)
       .then((response: SPHttpClientResponse) => {
         return response.json();
       });
